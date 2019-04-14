@@ -61,6 +61,7 @@ void loop() {
       }
     }
   }
+  
   if ( currentMs - previousMs >= stepLength)
   {
     previousMs = currentMs;
@@ -72,7 +73,8 @@ void loop() {
     Serial.println(" gateLength " + String(gateLength));
     digitalWrite(LED_BUILTIN, HIGH);
   }
-  delay(1);    // delay in between reads for stability
+  
+  delay(1);
 }
 
 void printState()
